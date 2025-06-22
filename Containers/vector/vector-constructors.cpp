@@ -55,9 +55,15 @@ int main(){
     cout<<"moved fourth.data():"<<(fourth.data()==nullptr?"nullptr":0)<<endl;
 
     //initializer list 
-    vector<double> sixth({1,2,3,4,5});
-    cout<<"initializer list vector sixth elements:";
-    for(vector<double>::iterator it = sixth.begin();it != sixth.end();it++){
+    vector<double> sixth_1({1,2,3,4,5});
+    vector<double> sixth_2{1,2,3,4,5};
+    cout<<"initializer list vector sixth_1 elements:";
+    for(vector<double>::iterator it = sixth_1.begin();it != sixth_1.end();it++){
+        cout<<*it<<" ";
+    }
+    cout<<"\n";
+    cout<<"initializer list vector sixth_2 elements:";
+    for(vector<double>::iterator it = sixth_2.begin();it != sixth_2.end();it++){
         cout<<*it<<" ";
     }
     cout<<"\n";
